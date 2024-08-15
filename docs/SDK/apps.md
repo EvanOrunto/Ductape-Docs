@@ -17,7 +17,7 @@ Apps can be managed by both the CLI and SDK.
 - Add App Authentication
 - Add App Events
 
-## SDK: Working With AppBuilder
+## Working With AppBuilder
 
 You need to create a builder instance for each app you would be building, in this documentation, we will be working with a builder for an app called Appify.
 
@@ -27,7 +27,7 @@ const appify = await ductape.getAppBuilder();
 
 You can access further information about the appBuilder [here](https://docs.io/)
 
-## SDK: Create App
+## Create App
 
 You can create an app with the appBuilder [createApp](http://createappdocs.io/)
 
@@ -38,7 +38,7 @@ await appify.createApp({
 });
 ```
 
-## SDK: Manage App Environments
+## Manage App Environments
 
 The appBuilder class provides us the opportunity to create, read, update and delete app environments. App environments are the various environments your app runs in
 
@@ -103,7 +103,7 @@ await appify.updateEnv(slug, {base_url: ‘http://dev.app-iffy.io’});
 - base_url: `string`, the environment base url \*\*\*optional\_
 - request_type: `enum`, JSON \*\*\*optional\_
 
-## SDK: App Actions
+## App Actions
 
 An app action is an individual actions that can be performed by an application e.g login, signup, process payment etc. They following functions can be performed with app actions
 
@@ -191,7 +191,7 @@ appify.updateAction(action_tag, {
 });
 ```
 
-## SDK: App Auth
+## App Auth
 
 You can setup authentication and authorization flows
 
@@ -292,7 +292,7 @@ const constant = await appify.fetchConstant("MY_CONSTANT_KEY");
 console.log(constant);
 ```
 
-## SDK: Managing App Variables
+## Managing App Variables
 
 App variables are dynamic values used within your application. With the `AppBuilderService`, you can create, update, and manage these variables efficiently.
 
@@ -349,7 +349,7 @@ const variable = await appify.fetchVariable("MY_VARIABLE_KEY");
 console.log(variable);
 ```
 
-## SDK: Managing App Events
+## Managing App Events
 
 Events are critical for handling various actions and triggers within your application. With the `AppBuilderService`, you can create, update, and manage events effectively.
 
